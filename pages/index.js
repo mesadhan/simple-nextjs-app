@@ -15,31 +15,26 @@ const indexPage = ({ href, name } ) => (
         <h1>Welcome to next.js!</h1>
         <p style={{ color: 'red' }}>This is paragraph!</p>
 
-
-
         <User name={"Sadhan"} age={23} />
 
 
+        {' | '}<Link href="/about"><a>About</a></Link>{' | '}
 
 
-{/*
+        {/*
+            {' | '}<Link href="/auth"><a>Auth</a></Link>{' | '}
+            <Link href={{ pathname: '/about', query: { name: 'Zeit' } }}><a>About</a></Link>{' | '}
+            <Link href="/about" replace>
+                <a>About Replace</a>
+            </Link>{' | '}
 
-        {' | '}<Link href="/auth"><a>Auth</a></Link>{' | '}
-        <Link href={{ pathname: '/about', query: { name: 'Zeit' } }}><a>About</a></Link>{' | '}
-        <Link href="/about" replace>
-            <a>About Replace</a>
-        </Link>{' | '}
+            <Link href="/about"><img width={50} src="/static/loader.png" alt="image" /></Link>
 
-        <Link href="/about"><img width={50} src="/static/loader.png" alt="image" /></Link>
-
-        <Link href="/about"><a>About</a></Link> {' | '}
-        <a onClick={() => Router.push('/auth')}>Auth</a> {' | '}
-        <a onClick={() => Router.push('/auth')}>Auth</a> {' | '}
-        <span onClick={handler}>About</span>{' | '}
-*/}
-
-
-
+            <Link href="/about"><a>About</a></Link> {' | '}
+            <a onClick={() => Router.push('/auth')}>Auth</a> {' | '}
+            <a onClick={() => Router.push('/auth')}>Auth</a> {' | '}
+            <span onClick={handler}>About</span>{' | '}
+        */}
 
     </div>
 );
