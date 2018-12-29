@@ -7,7 +7,19 @@ import Header from "../components/Header";
 import Layout from "../components/Layout";
 import BooksView from "../components/BooksView";
 
+
+const PostLink = (props) => (
+    <li>
+        <Link href={`/post?title=${props.title}`}>
+            <a>{props.title}</a>
+        </Link>
+    </li>
+);
+
+
 class IndexPage extends Component {
+
+
 
     static getInitialProps(context) {
         const promise = new Promise((resolve, reject) => {
@@ -30,7 +42,14 @@ class IndexPage extends Component {
                 <Layout>
                     <p>Hello Next.js</p>
 
+                    <ul>
+                        <PostLink title="Hello Next.js"/>
+                        <PostLink title="Learn Next.js is awesome"/>
+                        <PostLink title="Deploy apps with Zeit"/>
+                    </ul>
+
                     <h1> The Main Page of {this.props.appName} </h1>
+
                 </Layout>
 
 
