@@ -46,6 +46,7 @@ class IndexPage extends Component {
 
 
 
+
                     <h1> The Main Page of {this.props.appName} </h1>
 
                     <BooksView/>
