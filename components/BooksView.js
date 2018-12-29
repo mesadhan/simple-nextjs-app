@@ -1,5 +1,6 @@
-import User from "../pages";
+
 import React from "react";
+import User from "./User";
 
 
 

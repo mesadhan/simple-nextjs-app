@@ -6,15 +6,9 @@ import User from '../components/User'
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import BooksView from "../components/BooksView";
+import PostLink from "../components/PostLink";
 
 
-const PostLink = (props) => (
-    <li>
-        <Link href={`/post?title=${props.title}`}>
-            <a>{props.title}</a>
-        </Link>
-    </li>
-);
 
 
 class IndexPage extends Component {
@@ -42,14 +36,19 @@ class IndexPage extends Component {
                 <Layout>
                     <p>Hello Next.js</p>
 
+
+
                     <ul>
                         <PostLink title="Hello Next.js"/>
                         <PostLink title="Learn Next.js is awesome"/>
                         <PostLink title="Deploy apps with Zeit"/>
                     </ul>
 
+
+
                     <h1> The Main Page of {this.props.appName} </h1>
 
+                    <BooksView/>
                 </Layout>
 
 
