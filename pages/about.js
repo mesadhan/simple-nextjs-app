@@ -1,10 +1,12 @@
 import React from 'react'
-import Link from 'next/link'
+import Layout from "../components/Layout";
 
 const aboutPage = () => (
 
     <div>
-        <h1>This is about</h1>
+        <Layout>
+            <p>Hello from about page</p>
+        </Layout>
     </div>
 
 );
